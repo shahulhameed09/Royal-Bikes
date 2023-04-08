@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ROYAL BIKES. REPAIR AND SERVICES</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <script src="https://kit.fontawesome.com/e29bf25393.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+   <!-- header section starts  -->
+   <header class="header">
+
+      <nav class="navbar">
+
+         <a href="#" class="logo"> <i class="fas fa-tools"></i> ROYAL BIKES. REPAIR AND SERVICES </a>
+
+         <div class="links">
+            <a href="#home">home</a>
+            <a href="#ab">about</a>
+            <a href="#services">services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">contact</a>
+         </div>
+         <!-- <img class="pro" src="img/default.png" height="48px" width="48px"> -->
+         <div id="menu-btn" class="fa fa-bars"></div>
+      </nav>
+   </header>
+
+   <!-- header section ends -->
+
+   <!-- home section starts  -->
+
+   <section class="home" id="home">
+      <div class="image">
+         <img src="/img/main.jpg" alt="">
+      </div>
+
+      <div class="content">
+         <h3>Why fix it yourself? Leave it to the pros.</h3>
+         <p>Our technicians are highly courteous and trained with multiple years of industry experience. Highest quality
+            spare parts are used for all our jobs.</p>
+         <a href="#contact" class="btn">Contact</a>
+      </div>
+
+   </section>
+
+   <!-- home section ends -->
+
+   <section class="gap" id="ab"></section>
+
+   <!-- about section starts  -->
+
+   <h1 class="heading" style="margin-top: 5rem; margin-bottom:0px;">About</h1>
+   <section class="about" id="about" style="margin-top: 0px; padding-top:0px;">
+
+      <div class="content" style="padding-top: 0px;">
+         <h3>best quality Repair services</h3>
+         <p>Welcome to Royal Bikes. We provides a full range of services for the repair and modification of almost all
+            brands and models of both domestic and imported bikes.</p>
+
+         <p> We offering complete repairing services for various bikes and genuine spares parts available.</p>
+
+         <a href="#services" class="btn">read more</a>
+      </div>
+
+      <div class="image">
+         <img src="/img/about.jpg" alt="" style="border-radius: 300px;">
+      </div>
+
+   </section>
+
+   <!-- about section ends -->
+   <section class="gap"></section>
+
+   <!-- services section starts  -->
+
+   <section class="services" id="services">
+
+      <h1 class="heading"> our <span>services</span> </h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>Motor Bike Repair</h3>
+         </div>
+
+         <div class="box">
+            <h3>Engine work</h3>
+         </div>
+
+         <div class="box">
+            <h3>Painting</h3>
+         </div>
+         
+         <div class="box">
+            <h3>Bike Modification</h3>
+         </div>
+
+         <div class="box">
+            <h3>Tinkering</h3>
+         </div>
+
+         <div class="box">
+            <h3>GENUINE SPARES PARTS AVAILABLE</h3>
+         </div>
+      </div>
+
+   </section>
+
+   <!-- services section ends -->
+   <section class="gap"></section>
+
+   <!-- gallery section starts  -->
+
+   <section class="gallery" id="gallery">
+
+      <h1 class="heading"> our <span>gallery</span> </h1>
+
+      <div class="gallery-container">
+
+         <a class="box" href="images/g-img-1.jpg"><img src="/img/repair1" alt=""></a>
+         <a class="box" href="images/g-img-2.jpg"><img src="/img/repair2" alt=""></a>
+         <a class="box" href="images/g-img-8.jpg"><img src="/img/repair3" alt=""></a>
+         <a class="box" href="images/g-img-4.jpg"><img src="/img/repair4" alt=""></a>
+         <a class="box" href="images/g-img-5.jpg"><img src="/img/repair5.avif" alt=""></a>
+         <a class="box" href="images/g-img-6.jpg"><img src="/img/repair6" alt=""></a>
+
+      </div>
+
+   </section>
+
+   <!-- gallery section ends -->
+
+   <!-- reviews section starts  -->
+
+   <!-- <section class="swiper mySwiper">
+      <h1 class="heading" id="reviews">Customer <span>Reviews</span> </h1>
+      <div class="swiper-wrapper">
+
+         <div class="card swiper-slide">
+            <div class="card__image">
+               <img src="{{user.profile.image.url}}" alt="card image">
+            </div>
+            <form action="/reviews" method="post">
+               {% csrf_token %}
+               <div class="card__content">
+                  <span class="card__title">{{user.first_name}}
+                     {{user.last_name}}</span>
+                     {{rev.review_message}}
+                  <button type="submit" class="card__btn">Send</button>
+               </div>
+         </div>
+         </form>
+         {% for i in revs reversed %}
+         <div class="card swiper-slide">
+            {% if i.boss.username == user.username %}
+            <a href="{% url 'delete_reviews' i.id %}"><i class="fas fa-times" id="card_btn"></i></a>
+            {% endif %}
+            <div class="card__image">
+               <img src="{{i.boss.profile.image.url}}" alt="card image">
+            </div>
+            
+            <div class="card__content">
+               <span class="card__title">{{i.boss.first_name}} {{i.boss.last_name}}</span> -->
+   <!-- <span class="card__name">Vanessa Martinez</span> -->
+   <!-- <p class="card__text" width="10%">{{i.review_message}}</p>
+            </div>
+         </div>
+         {% endfor %}
+      </div>
+   </section> -->
+
+   <!-- Swiper JS -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+
+   <!-- Initialize Swiper -->
+   <!-- <script>
+      var swiper = new Swiper(".mySwiper", {
+         effect: "coverflow",
+         grabCursor: true,
+         slidesPerView: "auto",
+         coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false,
+         },
+         pagination: {
+            el: ".swiper-pagination",
+         },
+      });
+      document.getElementById('id_review_message').placeholder='Type Somthing...'
+   </script> -->
+   <!-- Reviews section ends -->
+
+   <!-- team section starts  -->
+<!-- 
+   <section class="gap"></section>
+
+
+   <section class="team" id="team">
+
+      <h1 class="heading"> our expert <span>team</span> </h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="img/my.jpg" alt="shahul" height="250" width="100">
+            <div class="content">
+               <h3>shahul</h3>
+               <p>electronic expert</p>
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                  <a href="https://www.instagram.com/shahul.hameed22/" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="img/Shabaz.jpg" alt="ashwaq" height="250" width="100">
+            <div class="content">
+               <h3>shabaz</h3>
+               <p>electronic expert</p>
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                  <a href="https://www.instagram.com/x_shabaz_x_/" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="box">
+            <img src="img/Ashwaq.jpg" alt="sheesh" height="250" width="100">
+            <div class="content">
+               <h3>ashwaq</h3>
+               <p>electronic expert</p>
+               <div class="share">
+                  <a href="#" class="fab fa-facebook-f"></a>
+                  <a href="https://web.whatsapp.com/" class="fab fa-whatsapp"></a>
+                  <a href="https://www.instagram.com/_.a_s_h_x.__/" class="fab fa-instagram"></a>
+                  <a href="#" class="fab fa-linkedin"></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section> -->
+
+   <!-- team section ends -->
+
+   <section class="gap"></section>
+
+   <!-- contact section starts  -->
+
+   <section class="contact" id="contact">
+
+      <h1 class="heading"> <span>contact</span> us </h1>
+
+      <div class="row">
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15556.059290258221!2d77.6336123!3d12.9067683!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14947fce2209%3A0x6465572da9f36cf9!2sF%20K%20Auto%20Parts!5e0!3m2!1sen!2sin!4v1680185043076!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <form>
+            <div class="inputBox">
+               <a href="tel=9845617488" class="link"> <i class="fas fa-phone"></i> 9845617488 </a>
+            </div>
+            <div class="inputBox">
+               <a href="tel=7676855440" class="link"> <i class="fas fa-phone"></i> 7676855440 </a>
+            </div>
+            <div class="inputBox">
+               <a href="mailto=mdfurqan78607@gmail.com" class="link"> <i class="fas fa-envelope"></i>
+                  mdfurqan78607@gmail.com </a>
+            </div>
+            <div class="inputBox">
+               <a href="mailto=Rehmanhafsa123@gmail.com" class="link"> <i class="fas fa-envelope"></i>
+                  Rehmanhafsa123@gmail.com </a>
+            </div>
+         </form>
+
+      </div>
+
+   </section>
+
+   <!-- contact section ends -->
+
+   <!-- footer section starts  -->
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <h3>quick links</h3>
+            <a class="link" href="#home"> <i class="fas fa-angle-right"></i> Home</a>
+            <a class="link" href="#about"> <i class="fas fa-angle-right"></i> About</a>
+            <a class="link" href="#services"> <i class="fas fa-angle-right"></i> Services</a>
+            <a class="link" href="#gallery"> <i class="fas fa-angle-right"></i> Gallery</a>
+            <a class="link" href="#reviews"> <i class="fas fa-angle-right"></i> Reviews</a>
+            <a class="link" href="#contact"> <i class="fas fa-angle-right"></i> Contact</a>
+         </div>
+
+         <div class="box">
+            <h3>contact info</h3>
+            <a href="tel=9845617488" class="link"> <i class="fas fa-phone"></i> 9845617488 </a>
+            <a href="tel=7676855440" class="link"> <i class="fas fa-phone"></i> 7676855440 </a>
+            <a href="mailto=mdfurqan78607@gmail.com" class="link"> <i class="fas fa-envelope"></i>
+               mdfurqan78607@gmail.com </a>
+               <a href="mailto=Rehmanhafsa123@gmail.com" class="link"> <i class="fas fa-envelope"></i>
+                  Rehmanhafsa123@gmail.com </a> 
+            <a class="link"> <i class="fas fa-map"></i> F K Auto Parts, 06, 6th Main 2nd Cross Rd, Madina Nagar, Sector
+               7, Mangammanapalya, Bengaluru, Karnataka 560068 </a>
+         </div>
+
+         <div class="box">
+            <h3>newsletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form>
+               <input type="email" name="email" placeholder="Enter your email" class="email">
+               <input type="submit" value="subscribe" class="btn">
+            </form>
+            <div class="share">
+               <a href="#" class="fab fa-facebook-f"></a>
+               <a href="#" class="fab fa-twitter"></a>
+               <a href="#" class="fab fa-instagram"></a>
+               <a href="#" class="fab fa-linkedin"></a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="credit"> Login as <a href="/admin"><span>admin</span></a></div>
+
+   </section>
+
+   <!-- footer section ends -->
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+   <!-- custom js file link  -->
+   <script src="js/scriptt.js"></script>
+
+   <!-- <script>
+      lightGallery(document.querySelector('.gallery .gallery-container'));
+      function mess() {
+         alert("Your message has been sent!")
+      }
+      function subscribe() {
+         alert("You have subscribed to this website")
+      }
+
+      var form_fields = document.getElementsByTagName('input')
+      form_fields[1].placeholder = 'Name';
+      form_fields[2].placeholder = 'Email ID';
+      form_fields[3].placeholder = 'Phone Number';
+      form_fields[4].placeholder = 'Subject';
+      document.getElementById('id_message').placeholder = 'Message';
+   </script> -->
+
+</body>
+
+</html>
